@@ -1,5 +1,5 @@
 #include <iostream>
-#include <queue> //queue¸¦ »ç¿ëÇÒ ¶§ ¼±¾ğÇØÁà¾ßÇÏ´Â stl
+#include <queue> //queueë¥¼ ì‚¬ìš©í•  ë•Œ ì„ ì–¸í•´ì¤˜ì•¼í•˜ëŠ” stl
 using namespace std;
 
 queue<pair<int, int>> Q;
@@ -10,7 +10,7 @@ int main()
 	int count = 12345;
 	pair<int, int> sugar;
 	pair<int, int> store;
-	cin >> N; //¹­À» ¼³ÅÁ ¾ç ÀÔ·Â
+	cin >> N; //ë¬¶ì„ ì„¤íƒ• ì–‘ ì…ë ¥
 
 	sugar = make_pair(N, 0);
 	Q.push(sugar);
@@ -25,7 +25,7 @@ int main()
 		}
 		else if (store.first > 0)
 		{
-			visit[store.first - 5] = true; //Áßº¹ÀúÀå ¸·±â 
+			visit[store.first - 5] = true; //ì¤‘ë³µì €ì¥ ë§‰ê¸° 
 			sugar = make_pair(store.first - 5, store.second + 1);
 			Q.push(sugar);
 			if (visit[store.first] == false)
@@ -43,5 +43,4 @@ int main()
 		cout << count;
 
 	return 0;
-
 }

@@ -2,10 +2,10 @@
 #include<string>
 using namespace std;
 char board[5][5] = { 'U','R','L','P','M',
-					 'X','P','R','E','T',
-					 'G','I','A','E','T',
-					 'X','T','N','Z','Y',
-					 'X','O','Q','R','S' }; //ÁÂÇ¥
+		     'X','P','R','E','T',
+		     'G','I','A','E','T',
+	  	     'X','T','N','Z','Y',
+		     'X','O','Q','R','S' }; //ì¢Œí‘œ
 int dx[3] = { -1,0,1};
 int dy[3] = { -1,0,1};
 string word;
@@ -24,7 +24,7 @@ int hasword(int y, int x, char fword)
 				*/
 			if (board[y + dx[i]][x + dy[j]] == fword)
 			{
-				num++; //±ÛÀÚ µÚ·Î ÇÑÄ­
+				num++; //ê¸€ì ë’¤ë¡œ í•œì¹¸
 				check++;
 				if (num == word.length())
 				{
@@ -53,7 +53,7 @@ int main()
 		}
 		cout << endl;
 	}
-	cout << "Ã£À» ´Ü¾î¸¦ ÀÔ·ÂÇÏ¼¼¿ä:";
+	cout << "ì°¾ì„ ë‹¨ì–´ë¥¼ ì…ë ¥í•˜ì„¸ìš”:";
 	getline(cin, word);
 
 	for (int i = 0; i < 5; i++)

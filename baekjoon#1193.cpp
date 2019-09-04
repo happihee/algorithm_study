@@ -2,7 +2,7 @@
 using namespace std;
 //////////////////////////////
 // baekjoon algorithm 1193  //
-// »ç¿ë¾ð¾î : c++			//
+// ì‚¬ìš©ì–¸ì–´ : c++			//
 //////////////////////////////
 int main()
 {
@@ -10,15 +10,15 @@ int main()
 	int df = 0;
 	int b = 1;
 	int compare = 1;
-	int denor = 0; //ºÐ¸ð
-	int numer = 0; //ºÐÀÚ
+	int denor = 0; //ë¶„ëª¨
+	int numer = 0; //ë¶„ìž
 	cin >> N;
 
 	while (1)
 	{
 		if (N <= compare)
 		{
-			if (b % 2 == 0) //Â¦¼ö¹øÂ° ÀÏ ¶§
+			if (b % 2 == 0) //ì§ìˆ˜ë²ˆì§¸ ì¼ ë•Œ
 			{
 				denor = b;
 				numer = 1;
@@ -45,4 +45,5 @@ int main()
 		compare += b;	
 	}
 	cout << numer << "/" << denor<< endl;
+	return 0;
 }

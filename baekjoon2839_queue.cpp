@@ -41,6 +41,7 @@ int main()
 	if (count == 12345) cout << -1;
 	else
 		cout << count;
-
+	
 	return 0;
+	
 }

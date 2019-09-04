@@ -46,4 +46,6 @@ int main()
 	MakeNumOne(number, 0);
 
 	cout << visit[1] << endl;
+	
+	return 0;
 }

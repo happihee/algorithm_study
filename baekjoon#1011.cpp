@@ -21,9 +21,9 @@ int starship(int start, int end)
 			break;
 		else
 			count = count + 2;
-	} //±âÁØ Ã£±â 
+	} //ê¸°ì¤€ ì°¾ê¸° 
 
-	store = store - beforenum; //»©°í ³²Àº ¼ıÀÚ È®ÀÎ
+	store = store - beforenum; //ë¹¼ê³  ë‚¨ì€ ìˆ«ì í™•ì¸
 	num = num - 1;
 	while (store != 0)
 	{
@@ -47,15 +47,16 @@ int main()
 	long long start[5005]= { 0, };
 	long long end[5005] = { 0, };
 	long long result[5005] = { 0, };
-	cin >> testcase; //Å×½ºÆ® ÄÉÀÌ½º ÀÔ·Â
+	cin >> testcase; //í…ŒìŠ¤íŠ¸ ì¼€ì´ìŠ¤ ì…ë ¥
 
 	for (int i = 0; i < testcase; i++)
 	{
-		cin >> start[i] >> end[i]; //½ÃÀÛ ÁöÁ¡°ú µµÂø ÁöÁ¡ ÀÔ·Â
+		cin >> start[i] >> end[i]; //ì‹œì‘ ì§€ì ê³¼ ë„ì°© ì§€ì  ì…ë ¥
 		result[i] = starship(start[i], end[i]);
 	}
 	for (int i = 0; i < testcase; i++) {
 		cout << result[i] << endl;
 	}
+	
 	return 0;
 }

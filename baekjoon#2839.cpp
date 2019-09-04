@@ -40,6 +40,7 @@ void DeliverSugar(int count, int remainsugar)
 		DeliverSugar(count, remainsugar - 3);
 	}
 }
+
 int main()
 {
 	cin >> N; //설탕 양 입력

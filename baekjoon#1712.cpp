@@ -25,4 +25,5 @@ int main()
 		cout << flag;
 	}
 
+	return 0;
 }

@@ -1,3 +1,6 @@
+/////////////////////////////////////////
+//ì•Œê³ ë¦¬ì¦˜ ë¶„ë¥˜ : Dynamic Programming // 
+////////////////////////////////////////
 #include<iostream>
 using namespace std;
 int CountOne[41] = { 0, };
@@ -5,13 +8,13 @@ int CountZero[41] = { 0, };
 
 int main()
 {
-	//////°íÁ¤ °ª/////
+	//////ê³ ì • ê°’/////
 	CountOne[0] = 0;
 	CountZero[0] = 1;
 	CountOne[1] = 1;
 	CountZero[1] = 0;
 	//////////////////
-	//40±îÁöÀÇ fibonacciÀÇ Á¤º¸¸¦ ´ãÀº ¹è¿­//
+	//40ê¹Œì§€ì˜ fibonacciì˜ ì •ë³´ë¥¼ ë‹´ì€ ë°°ì—´//
 	for (int i = 2; i < 42;i++)
 	{
 		CountOne[i] = CountOne[i - 2] + CountOne[i - 1];

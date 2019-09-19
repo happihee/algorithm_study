@@ -1,17 +1,21 @@
+/////////////////////////////////////////
+//	ì•Œê³ ë¦¬ì¦˜ ë¶„ë¥˜ : DFS + BFS	 // 
+////////////////////////////////////////
+
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
 #include<queue>
 using namespace std;
 
 int map[8][8] = { 0 };
-/*text¿µ¿ªÀ¸·Î µé¾î°¡±â ¶§¹®¿¡ °ø°£³¶ºñ ÀúÇÏ*/
+/*textì˜ì—­ìœ¼ë¡œ ë“¤ì–´ê°€ê¸° ë•Œë¬¸ì— ê³µê°„ë‚­ë¹„ ì €í•˜*/
 int N;
 int M;
 int safezonenum = 0;
-/* ÁÂÇ¥ ¿µ¿ª */
+/* ì¢Œí‘œ ì˜ì—­ */
 int dx[4] = { -1, 1, 0 , 0 };
 int dy[4] = { 0 ,0, -1 ,1 };
-/* BFS¿¡ »ç¿ëµÇ´Â Queue */
+/* BFSì— ì‚¬ìš©ë˜ëŠ” Queue */
 int FindSafeZone(int m[8][8])
 {
 	int safezero = 0;
@@ -100,7 +104,7 @@ void NewMap(int Xcur, int Ycur, int step)
 }
 int main()
 {
-	/* ¸ÊÀ» ±¸¼ºÇÏ´Â ºÎºÐ */
+	/* ë§µì„ êµ¬ì„±í•˜ëŠ” ë¶€ë¶„ */
 	//freopen("input1.txt", "r", stdin);
 	cin >> N >> M;
 	for (int i = 0; i < N; i++)

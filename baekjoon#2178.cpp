@@ -1,5 +1,5 @@
 //////////////////////////////////
-//		algorithm : BFS			//
+//	algorithm : BFS		//
 //////////////////////////////////
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
@@ -32,12 +32,12 @@ void FindMiro(int xcur, int ycur)
 			if (Nxcur < 0 || Nycur < 0 || Nxcur > N - 1 || Nycur > M - 1)
 				continue;
 
-			if (board[Nxcur][Nycur] == 1 && visit[Nxcur][Nycur] == 0) //°¥ ¼ö ÀÖ´Â ±æÀÏ ¶§
+			if (board[Nxcur][Nycur] == 1 && visit[Nxcur][Nycur] == 0) //ê°ˆ ìˆ˜ ìˆëŠ” ê¸¸ì¼ ë•Œ
 			{
 				q.push(make_pair(Nxcur, Nycur));
 				visit[Nxcur][Nycur] = visit[xcur][ycur] + 1;
 			}
-			else //°¥ ¼ö ¾ø´Â ±æÀÏ ¶§
+			else //ê°ˆ ìˆ˜ ì—†ëŠ” ê¸¸ì¼ ë•Œ
 			{
 				continue;
 			}
@@ -56,7 +56,7 @@ int main()
 		{
 			scanf("%1d", &board[i][j]);
 		}
-	} //board ±¸¼º
+	} //board êµ¬ì„±
 	FindMiro(0, 0);
 
 	cout << visit[N - 1][M - 1];
